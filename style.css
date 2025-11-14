@@ -1,0 +1,145 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1f1f1f;
+    color: lightcyan;
+    line-height: 1.6;
+    padding-top: 80px;
+}
+
+/* Navigation */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #333;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+ul li a {
+    text-decoration: none;
+    color: lightcyan;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: cyan;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+    background: #2a2a2a;
+}
+
+section h1, section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: cyan;
+}
+
+section p {
+    text-align: center;
+    font-size: 16px;
+    color: lightcyan;
+}
+
+/* Project Cards */
+.container {
+    text-align: center;
+}
+
+.tab-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #262626;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,255,255,0.3);
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.project-card h2 {
+    color: cyan;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: lightcyan;
+    font-size: 14px;
+}
+
+.project-card:hover {
+    background: #ff004f;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #ff004f, 0 0 25px #ff004f;
+}
+
+/* Contact Form */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-field {
+    padding: 12px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    background: #111;
+    color: white;
+}
+
+input[type="submit"] {
+    padding: 12px;
+    background: cyan;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: lightcyan;
+}
+
+/* Footer */
+.footerbtn {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    color: cyan;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tab-links {
+        grid-template-columns: 1fr;
+    }
+}
