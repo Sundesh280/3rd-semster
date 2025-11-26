@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- Navigation basr -->
  <ul>
   <li><a href="#about">About Me</a></li>
   <li><a href="#project">Projects</a></li>
+  <li><a href="#skill">Skill</a></li>
+  <li><a href="#media">Media</a></li>
+  <li > <a href="#Image Slider">Image Slider</a></li>
   <li><a href="#contact">Contact</a></li>
  </ul>
+
+  <!-- toogle button -->
+<button onclick="myFunction()"><h6>dark</h4></button>
 
  <!-- About Me -->
  <section id="about">
@@ -24,7 +32,7 @@
      <div class="container">
          <h1 class="he">Projects</h1>
          <div class="tab-links">
-             <div class="project-card">
+             <div class="project-card" >
                  <h2>Weather App</h2>
                  <p>Real-time weather application using API data.</p>
              </div>
@@ -40,6 +48,62 @@
      </div>
  </section>
 
+ <!--Skill skill bars  -->
+  <section id="skill">
+    <h1>My Skills</h1>
+
+   <div class="skill-container">
+  <div class="skill-name">HTML&Css</div>
+  <div class="skill-bar-container">
+    <div class="skill-bar" data-percent="90"></div>
+  </div>
+</div>
+
+<div class="skill-container">
+  <div class="skill-name">Python</div>
+  <div class="skill-bar-container">
+    <div class="skill-bar" data-percent="85"></div>
+  </div>
+ 
+</div>
+
+<div class="skill-container">
+  <div class="skill-name">JavaScript</div>
+  <div class="skill-bar-container">
+    <div class="skill-bar" data-percent="75"></div>
+  </div>
+</div>
+
+  </section>
+
+ <!-- Media Section -->
+ <section id="media">
+     <h1>Media</h1>
+     <video controls width="300">
+        <source src="messigoal.mp4" type="">
+     </video>
+     <audio controls>
+        <source src="commentry.mp3" type="">
+     </audio>
+  <!-- Canvas -->
+    <canvas id="myCanvas" width="400" height="200" style="background:white; border:2px solid cyan; margin-top:20px;"></canvas>
+ </section>
+
+ <!-- Step 5: Image Slider -->
+<section id="gallery">
+    <h2>Image Slider</h2>
+    <div class="slider-container">
+        <div class="slides">
+            <img src="messi-jersey-real-madridjpg.jpg" alt="Image 1" class="slide active">
+            <img src="images.jpg" alt="Image 2" class="slide">
+            <img src="world cup.jpg" alt="Image 3" class="slide">
+           
+        </div>
+        <button class="prev-btn">Previous</button>
+        <button class="next-btn">Next</button>
+    </div>
+</section>
+
  <!-- Contact Section -->
  <section id="contact">
      <h2>Contact Me</h2>
@@ -52,15 +116,19 @@
 
          <label for="message">Message:</label>
          <textarea class="form-field" name="message" placeholder="Your message here"></textarea>
-
          <input type="submit" value="Submit">
      </form>
  </section>
+
+ <!-- Back-to-top button -->
+<button id="topBtn" aria-label="Back to top">↑</button>
 
  <!-- Footer -->
  <div class="footerbtn">
      <p>Copyright &copy;2025; Designed by <span class="designer">Sandesh</span></p>
  </div>
+ <!-- script link -->
+<script src="script.js"></script>
 
 </body>
 </html>
