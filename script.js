@@ -37,6 +37,16 @@ function myFunction() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+//Make projects card clickable 
+document.querySelectorAll(".project-card").forEach(card => {
+    card.addEventListener("click", function () {
+        const link = this.getAttribute("data-url");
+        if (link) {
+            window.open(link, "_blank");
+        }
+    });
+});
+
 // contact form 
 document.getElementById("contactForm").addEventListener("submit", function(e){
     e.preventDefault();
